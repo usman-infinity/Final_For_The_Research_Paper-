@@ -1,6 +1,14 @@
 # Final_For_The_Research_Paper-
 This repository contains a state-of-the-art deep learning framework designed to predict air quality across 10 major cities in Pakistan. By leveraging a hybrid CNN-Informer-BiLSTM architecture, the model performs multi-target forecasting for both PM2.5 and PM10 concentrations simultaneously.
-📊 Dataset InformationSource: Open-Meteo API (Hourly historical data).Coverage: 10 Cities (Lahore, Karachi, Islamabad, Faisalabad, etc.).Records: 21,840 hourly readings (Nov 2025 - Feb 2026).Features: 39 engineered features including meteorological variables (Wind Speed, Humidity, $NO_2$) and temporal cycles.
-🏗️ Model ArchitectureThe "Proposed Model" utilizes a three-stage hybrid approach:CNN (1D-Convolution): Extracts localized spatial patterns and short-term pollutant fluctuations.Informer (ProbSparse Self-Attention): Efficiently captures long-range temporal dependencies and global trends without the high computational cost of standard Transformers.BiLSTM (Bidirectional LSTM): Learns sequential relationships from both past-to-future and future-to-past contexts to stabilize $PM_{2.5}$ and $PM_{10}$ predictions.
-📈 Performance SummaryThe model demonstrates exceptional accuracy, particularly in northern urban clusters:Highest Accuracy: $R^2$ of 0.9378 for $PM_{2.5}$ in Islamabad/Rawalpindi.Multi-Target: Concurrent forecasting of $PM_{10}$ and $PM_{2.5}$ to learn shared atmospheric correlations.
-🛠️ Technologies UsedLanguage: PythonLibraries: TensorFlow/Keras, Pandas, NumPy, Scikit-learnEnvironment: Google Colab / VS Code
+
+📊 Dataset InformationSource:
+	Open-Meteo API (Hourly historical data).Coverage: 10 Cities (Lahore, Karachi, Islamabad, Faisalabad, etc.).Records: 21,840 hourly readings (Nov 2025 - Feb 2026).Features: 39 engineered features including meteorological variables (Wind Speed, Humidity, $NO_2$) and temporal cycles.
+
+🏗️ Model ArchitectureThe "Proposed Model" utilizes a three-stage hybrid approach:CNN (1D-Convolution): 
+	Extracts localized spatial patterns and short-term pollutant fluctuations.Informer (ProbSparse Self-Attention): Efficiently captures long-range temporal dependencies and global trends without the high computational cost of standard Transformers.BiLSTM (Bidirectional LSTM): Learns sequential relationships from both past-to-future and future-to-past contexts to stabilize $PM_{2.5}$ and $PM_{10}$ predictions.
+
+📈 Performance SummaryThe model demonstrates exceptional accuracy, particularly in northern urban clusters:Highest Accuracy: 
+	$R^2$ of 0.9378 for $PM_{2.5}$ in Islamabad/Rawalpindi.Multi-Target: Concurrent forecasting of $PM_{10}$ and $PM_{2.5}$ to learn shared atmospheric correlations.
+
+🛠️ Technologies UsedLanguage: PythonLibraries:
+	TensorFlow/Keras, Pandas, NumPy, Scikit-learnEnvironment: Google Colab / VS Code
